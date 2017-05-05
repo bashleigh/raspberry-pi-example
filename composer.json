@@ -1,0 +1,88 @@
+{
+    "name": "laravel/laravel",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "type": "project",
+    "repositories":[
+        {
+            "url": "https://github.com/chickenTikkaMasala/i2clibrary",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/chickenTikkaMasala/BMP085",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/chickenTikkaMasala/ADXL345",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/chickenTikkaMasala/MC5883L",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/chickenTikkaMasala/L3G4200D",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/chickenTikkaMasala/GY80",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/chickenTikkaMasala/GPIO",
+            "type": "vcs"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "laravel/framework": "5.4.*",
+        "laravel/tinker": "~1.0",
+        "chickentikkamasala/i2clibrary": "dev-master",
+        "chickenTikkaMasala/BMP085": "dev-master",
+        "chickenTikkaMasala/ADXL345": "dev-master",
+        "chickenTikkaMasala/MC5883L": "dev-master",
+        "chickenTikkaMasala/L3G4200D": "dev-master",
+        "chickentikkaMasala/GPIO": "dev-master",
+        "chickentikkaMasala/GY80": "dev-master"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~5.7"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "php artisan key:generate"
+        ],
+        "post-install-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postInstall",
+            "php artisan optimize"
+        ],
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "php artisan optimize"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}
