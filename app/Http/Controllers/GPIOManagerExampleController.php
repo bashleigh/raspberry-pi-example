@@ -19,7 +19,7 @@ class GPIOManagerExampleController extends Controller
      */
     public function index(Request $request, GPIOManager $GPIOManager)
     {
-        return view('GPIOManager/index.blade.php', [
+        return view('gpio/index', [
             'redled' => $GPIOManager->get('redled'),
         ]);
     }
@@ -33,9 +33,11 @@ class GPIOManagerExampleController extends Controller
     {
         if ($request->has('value'))
         {
-            $GPIOManager->redlight = $request->value;
+            $GPIOManager->redled = $request->value;
         }
 
-        return $request->ajax() ? response()->json(['value' => $GPIOManager->redlight->getPrevious()]) : redirect()->route('gpiomanager.index');
+        dd($GPIOManager->getDetailedList());
+
+        return $request->ajax() ? response()->json(['redled' => $GPIOManager->redled]) : redirect()->route('gpio.index');
     }
 }

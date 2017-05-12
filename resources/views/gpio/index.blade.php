@@ -9,9 +9,12 @@
         <ul>
             <li>Pin: {{$redled->getPin()}}</li>
             <li>Maximum value: {{$redled->getMaxValue()}}</li>
+            <li>Previous Value: <span id="previousValue">{{$redled->getPrevious()}}</span></li>
         </ul>
 
         <form name="gpioManager" class="form-horizontal" action="{{route('gpio.redled')}}" method="post">
+
+            {{csrf_field()}}
 
             <div class="form-group">
 
@@ -53,6 +56,9 @@
                 $.ajax({
                     url: $self.attr('action'),
                     method: $self.attr('method'),
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+                    },
                     data: {
                         'value': $('input[name="value"]', $self).val(),
                     },
@@ -61,6 +67,10 @@
                     },
                     success: function(result) {
                         console.log(result);
+
+                        $("#previousValue").html(result[0].value);
+
+
                     },
 
                 });

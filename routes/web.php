@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/gpio', 'GPIOManagerExampleController@index')->name('gpio.index');
+Route::post('/gpio', 'GPIOManagerExampleController@redled')->name('gpio.redled');
