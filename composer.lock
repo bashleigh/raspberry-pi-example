@@ -120,12 +120,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chickenTikkaMasala/GPIO.git",
-                "reference": "d396ee48924d4361eaed56f12037dc66bc230993"
+                "reference": "e50b8b282faf731518d08657b8e022d8ff8e5768"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chickenTikkaMasala/GPIO/zipball/d396ee48924d4361eaed56f12037dc66bc230993",
-                "reference": "d396ee48924d4361eaed56f12037dc66bc230993",
+                "url": "https://api.github.com/repos/chickenTikkaMasala/GPIO/zipball/e50b8b282faf731518d08657b8e022d8ff8e5768",
+                "reference": "e50b8b282faf731518d08657b8e022d8ff8e5768",
                 "shasum": ""
             },
             "type": "project",
@@ -144,7 +144,7 @@
                 "source": "https://github.com/chickenTikkaMasala/GPIO/tree/master",
                 "issues": "https://github.com/chickenTikkaMasala/GPIO/issues"
             },
-            "time": "2017-05-12T08:59:07+00:00"
+            "time": "2017-05-12T11:26:36+00:00"
         },
         {
             "name": "chickentikkamasala/gy80",
