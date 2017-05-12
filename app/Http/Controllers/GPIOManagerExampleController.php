@@ -17,9 +17,11 @@ class GPIOManagerExampleController extends Controller
      * @param Request $request
      * @return mixed
      */
-    public function index(Request $request)
+    public function index(Request $request, GPIOManager $GPIOManager)
     {
-        return view('GPIOManager/index.blade.php');
+        return view('GPIOManager/index.blade.php', [
+            'redled' => $GPIOManager->get('redled'),
+        ]);
     }
 
     /**
@@ -27,7 +29,7 @@ class GPIOManagerExampleController extends Controller
      * @param GPIOManager $GPIOManager
      * @return mixed
      */
-    public function redLight(Request $request, GPIOManager $GPIOManager)
+    public function redLed(Request $request, GPIOManager $GPIOManager)
     {
         if ($request->has('value'))
         {
