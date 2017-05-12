@@ -68,8 +68,7 @@
                     success: function(result) {
                         console.log(result);
 
-                        $("#previousValue").html(result[0].value);
-
+                        $("#previousValue").html(result.redled.value);
 
                     },
 

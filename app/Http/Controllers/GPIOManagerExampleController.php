@@ -36,8 +36,10 @@ class GPIOManagerExampleController extends Controller
             $GPIOManager->redled = $request->value;
         }
 
-        dd($GPIOManager->getDetailedList());
+        $redled = $GPIOManager->get('redled');
 
-        return $request->ajax() ? response()->json(['redled' => $GPIOManager->redled]) : redirect()->route('gpio.index');
+        return $request->ajax() ? response()->json(['redled' => [
+            'value' => $redled->getPrevious(),
+        ]]) : redirect()->route('gpio.index');
     }
 }
