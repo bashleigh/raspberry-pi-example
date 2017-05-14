@@ -18,6 +18,10 @@ class EventServiceProvider extends ServiceProvider
         ],
     ];
 
+    protected $subscribe = [
+        \ChickenTikkaMasala\GPIO\Bridge\Laravel\Events\EventSubscriber::class,
+    ];
+
     /**
      * Register any events for your application.
      *
