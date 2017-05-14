@@ -21,6 +21,7 @@ class GPIOManagerExampleController extends Controller
     {
         return view('gpio/index', [
             'redled' => $GPIOManager->get('redled'),
+            'photosensor' => $GPIOManager->get('photosensor'),
         ]);
     }
 
@@ -41,5 +42,15 @@ class GPIOManagerExampleController extends Controller
         return $request->ajax() ? response()->json(['redled' => [
             'value' => $redled->getPrevious(),
         ]]) : redirect()->route('gpio.index');
+    }
+
+    /**
+     * @param Request $request
+     * @param GPIOManager $GPIOManager
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function photosensor(Request $request, GPIOManager $GPIOManager)
+    {
+        return response()->json(['photosensor' => $GPIOManager->photosensor !== null ? $GPIOManager->photosensor : 'Looks like your environment settings are not configured correctly']);
     }
 }

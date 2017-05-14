@@ -17,3 +17,5 @@ Route::get('/', function () {
 
 Route::get('/gpio', 'GPIOManagerExampleController@index')->name('gpio.index');
 Route::post('/gpio', 'GPIOManagerExampleController@redled')->name('gpio.redled');
+
+Route::get('/gpio/photosensor', 'GPIOManagerExampleController@photosensor')->name('gpio.photosensor');

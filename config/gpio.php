@@ -40,6 +40,12 @@ return [
             'defaultValue' => 0,
         ],
 
+        'photosensor' => [
+            'pin' => 2,
+            'mode' => 'read',
+            'defaultValue' => 0,
+        ],
+
     ],
 
 ];

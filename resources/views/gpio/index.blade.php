@@ -40,6 +40,14 @@
 
     </div>
 
+    <div class="col-sm-12">
+
+        <h1>Display of the photosensor's value</h1>
+
+        <p id="photosensor">{{$photosensor}}</p>
+
+    </div>
+
 @endsection
 
 @push('scripts')
@@ -48,6 +56,7 @@
 
         $(document).ready(function() {
 
+            //AJAX post request for updating the value of redled
             $("form").submit(function(event) {
                 event.preventDefault();
 
@@ -74,6 +83,19 @@
 
                 });
             });
+
+            function updatePhotosensor() {
+                console.log('photo called');
+                $.ajax({
+                    method: 'get',
+                    url: '{{route('gpio.photosensor')}}',
+                    success: function(result) {
+                        $('#photosensor').html(result.photosensor);
+                    },
+                });
+            }
+
+            setInterval(updatePhotosensor, 2000);
 
         });
 

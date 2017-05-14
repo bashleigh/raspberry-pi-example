@@ -29,6 +29,12 @@ Require the service provider into your application config file in `config/app.ph
     
 ];
 ```
+Add the event service provider
+```php
+protected $subscribe = [
+    \ChickenTikkaMasala\GPIO\Bridge\Laravel\Events\EventSubscriber::class,
+ ];
+ ```
 
 Get the vendor config files by running 
 
