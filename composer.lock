@@ -4,128 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b2456b0a67760258c1fbdaaaa96e4765",
+    "content-hash": "4b8862154beddaa834f46554e617a2d1",
     "packages": [
         {
-            "name": "ChickenTikkaMasala/I2cLibrary",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/chickenTikkaMasala/I2cLibrary.git",
-                "reference": "9c8acfd7a8c79ee0f23645b7c29ff71c0a8b523d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/chickenTikkaMasala/I2cLibrary/zipball/9c8acfd7a8c79ee0f23645b7c29ff71c0a8b523d",
-                "reference": "9c8acfd7a8c79ee0f23645b7c29ff71c0a8b523d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "ChickenTikkaMasala\\I2cLibrary": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Aaryanna Simonelli",
-                    "email": "ashleighsimonelli@gmail.com"
-                }
-            ],
-            "support": {
-                "source": "https://github.com/chickenTikkaMasala/I2cLibrary/tree/master",
-                "issues": "https://github.com/chickenTikkaMasala/I2cLibrary/issues"
-            },
-            "time": "2017-05-02T09:23:55+00:00"
-        },
-        {
-            "name": "chickentikkamasala/adxl345",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/chickenTikkaMasala/ADXL345.git",
-                "reference": "16d6519c250d23b0240c612a1d9065d15e7f017d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/chickenTikkaMasala/ADXL345/zipball/16d6519c250d23b0240c612a1d9065d15e7f017d",
-                "reference": "16d6519c250d23b0240c612a1d9065d15e7f017d",
-                "shasum": ""
-            },
-            "require": {
-                "chickentikkamasala/i2clibrary": "dev-master"
-            },
-            "type": "project",
-            "autoload": {
-                "psr-0": {
-                    "ChickenTikkaMasala\\ADXL345": "src/"
-                }
-            },
-            "authors": [
-                {
-                    "name": "ashleigh simonelli",
-                    "email": "ashleighsimonelli@gmail.com"
-                }
-            ],
-            "support": {
-                "source": "https://github.com/chickenTikkaMasala/ADXL345/tree/master",
-                "issues": "https://github.com/chickenTikkaMasala/ADXL345/issues"
-            },
-            "time": "2017-05-02T08:34:14+00:00"
-        },
-        {
-            "name": "chickentikkamasala/bmp085",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/chickenTikkaMasala/BMP085.git",
-                "reference": "e00ef8046153c34307c18b94419db6be8123364f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/chickenTikkaMasala/BMP085/zipball/e00ef8046153c34307c18b94419db6be8123364f",
-                "reference": "e00ef8046153c34307c18b94419db6be8123364f",
-                "shasum": ""
-            },
-            "require": {
-                "chickentikkamasala/i2clibrary": "dev-master"
-            },
-            "type": "project",
-            "autoload": {
-                "psr-0": {
-                    "ChickenTikkaMasala\\BMP085": "src/"
-                }
-            },
-            "authors": [
-                {
-                    "name": "ashleigh simonelli",
-                    "email": "ashleighsimonelli@gmail.com"
-                }
-            ],
-            "support": {
-                "source": "https://github.com/chickenTikkaMasala/BMP085/tree/master",
-                "issues": "https://github.com/chickenTikkaMasala/BMP085/issues"
-            },
-            "time": "2017-05-02T08:57:05+00:00"
-        },
-        {
             "name": "chickentikkamasala/gpio",
-            "version": "dev-master",
+            "version": "v1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/chickenTikkaMasala/GPIO.git",
-                "reference": "e50b8b282faf731518d08657b8e022d8ff8e5768"
+                "url": "https://github.com/bashleigh/GPIO.git",
+                "reference": "99b9c313a502524813b53dff8c89bfc58d777359"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chickenTikkaMasala/GPIO/zipball/e50b8b282faf731518d08657b8e022d8ff8e5768",
-                "reference": "e50b8b282faf731518d08657b8e022d8ff8e5768",
+                "url": "https://api.github.com/repos/bashleigh/GPIO/zipball/99b9c313a502524813b53dff8c89bfc58d777359",
+                "reference": "99b9c313a502524813b53dff8c89bfc58d777359",
                 "shasum": ""
             },
             "type": "project",
@@ -134,126 +26,14 @@
                     "ChickenTikkaMasala\\GPIO": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
                     "name": "ashleigh simonelli",
                     "email": "ashleighsimonelli@gmail.com"
                 }
             ],
-            "support": {
-                "source": "https://github.com/chickenTikkaMasala/GPIO/tree/master",
-                "issues": "https://github.com/chickenTikkaMasala/GPIO/issues"
-            },
-            "time": "2017-05-12T11:26:36+00:00"
-        },
-        {
-            "name": "chickentikkamasala/gy80",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/chickenTikkaMasala/GY80.git",
-                "reference": "a419f20c24ef1fb24731dcecdaf8043fb274f57d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/chickenTikkaMasala/GY80/zipball/a419f20c24ef1fb24731dcecdaf8043fb274f57d",
-                "reference": "a419f20c24ef1fb24731dcecdaf8043fb274f57d",
-                "shasum": ""
-            },
-            "require": {
-                "chickentikkamasala/adxl345": "dev-master",
-                "chickentikkamasala/bmp085": "dev-master",
-                "chickentikkamasala/i2clibrary": "dev-master",
-                "chickentikkamasala/l3g4200d": "dev-master",
-                "chickentikkamasala/mc5883l": "dev-master"
-            },
-            "type": "project",
-            "autoload": {
-                "psr-0": {
-                    "ChickenTikkaMasala\\GY80": "src/"
-                }
-            },
-            "authors": [
-                {
-                    "name": "ashleigh simonelli",
-                    "email": "ashleighsimonelli@gmail.com"
-                }
-            ],
-            "support": {
-                "source": "https://github.com/chickenTikkaMasala/GY80/tree/master",
-                "issues": "https://github.com/chickenTikkaMasala/GY80/issues"
-            },
-            "time": "2017-05-02T08:59:01+00:00"
-        },
-        {
-            "name": "chickentikkamasala/l3g4200d",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/chickenTikkaMasala/L3G4200D.git",
-                "reference": "293c0bb936263ecdf7517c1d82c62ae213d5e33b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/chickenTikkaMasala/L3G4200D/zipball/293c0bb936263ecdf7517c1d82c62ae213d5e33b",
-                "reference": "293c0bb936263ecdf7517c1d82c62ae213d5e33b",
-                "shasum": ""
-            },
-            "require": {
-                "chickentikkamasala/i2clibrary": "dev-master"
-            },
-            "type": "project",
-            "autoload": {
-                "psr-0": {
-                    "ChickenTikkaMasala\\L3G4200D": "src/"
-                }
-            },
-            "authors": [
-                {
-                    "name": "ashleigh simonelli",
-                    "email": "ashleighsimonelli@gmail.com"
-                }
-            ],
-            "support": {
-                "source": "https://github.com/chickenTikkaMasala/L3G4200D/tree/master",
-                "issues": "https://github.com/chickenTikkaMasala/L3G4200D/issues"
-            },
-            "time": "2017-05-02T08:13:04+00:00"
-        },
-        {
-            "name": "chickentikkamasala/mc5883l",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/chickenTikkaMasala/MC5883L.git",
-                "reference": "690b9625e0d1d7d4a15693d08f5935417888f4bd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/chickenTikkaMasala/MC5883L/zipball/690b9625e0d1d7d4a15693d08f5935417888f4bd",
-                "reference": "690b9625e0d1d7d4a15693d08f5935417888f4bd",
-                "shasum": ""
-            },
-            "require": {
-                "chickentikkamasala/i2clibrary": "dev-master"
-            },
-            "type": "project",
-            "autoload": {
-                "psr-0": {
-                    "ChickenTikkaMasala\\MC5883L": "src/"
-                }
-            },
-            "authors": [
-                {
-                    "name": "ashleigh simonelli",
-                    "email": "ashleighsimonelli@gmail.com"
-                }
-            ],
-            "support": {
-                "source": "https://github.com/chickenTikkaMasala/MC5883L/tree/master",
-                "issues": "https://github.com/chickenTikkaMasala/MC5883L/issues"
-            },
-            "time": "2017-05-02T08:11:48+00:00"
+            "time": "2018-04-26T09:53:27+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3589,15 +3369,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "chickentikkamasala/i2clibrary": 20,
-        "chickentikkamasala/bmp085": 20,
-        "chickentikkamasala/adxl345": 20,
-        "chickentikkamasala/mc5883l": 20,
-        "chickentikkamasala/l3g4200d": 20,
-        "chickentikkamasala/gpio": 20,
-        "chickentikkamasala/gy80": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
