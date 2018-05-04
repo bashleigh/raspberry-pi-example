@@ -1,4 +1,4 @@
-# Example of how to implement the GPIO Manager and I2C packages in laravel 
+# Example of how to implement the GPIO Manager
 
 ## GPIO Manager
 ### requirements 
